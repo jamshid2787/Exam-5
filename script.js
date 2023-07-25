@@ -1,6 +1,18 @@
-const todo=document.querySelector('todo1');
-const progress=document.querySelector('progress1');
-const done1=document.querySelector('done1');
+
+
+function allowDrop(e) {
+  e.preventDefault();
+}
+
+function drag(e) {
+  e.dataTransfer.setData("text", e.target.id);
+}
+
+function drop(e) {
+  e.preventDefault();
+  var data = e.dataTransfer.getData("text");
+  e.target.appendChild(document.getElementById(data));
+}
 
 
 
