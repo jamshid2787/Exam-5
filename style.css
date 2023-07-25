@@ -45,12 +45,13 @@ body{
 .boxes{
     width: 300px;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     border-radius: 10px;
+    position: relative;
 }
 .box{
     display: grid;
@@ -62,9 +63,11 @@ body{
     font-size: 24px;
     background-color: rgb(69, 57, 57);
 }
-button{
+.button{
     width: 60px;
     height: 20px;
     border-radius: 10px;
     border: none;
+    position: absolute;
+    bottom: 10px;
 }

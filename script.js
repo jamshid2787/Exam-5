@@ -1,5 +1,4 @@
 
-
 function allowDrop(e) {
   e.preventDefault();
 }
@@ -13,6 +12,7 @@ function drop(e) {
   var data = e.dataTransfer.getData("text");
   e.target.appendChild(document.getElementById(data));
 }
+
 
 
 
